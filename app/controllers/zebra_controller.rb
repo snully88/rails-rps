@@ -1,4 +1,9 @@
 class ZebraController < ApplicationController
+  
+  def rules
+    render({ :template => "game_templates/rules"})
+  end
+
   def rock_moves
 
     moves = ["rock", "paper", "scissors"]
